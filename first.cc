@@ -103,7 +103,7 @@ int main (int argc, char *argv[])
 
 	ApplicationContainer clientApps = echoClient.Install (p2pNodes.Get (0));
 	clientApps.Start (Seconds (2.0));
-	clientApps.Stop (Seconds (10.0));
+	clientApps.Stop (Seconds (100.0));
 
 	pointToPoint.EnablePcapAll("second");
 	csma.EnablePcap("second", csmaDevices.Get(1), true); 
